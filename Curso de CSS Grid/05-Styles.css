@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    grid-template-areas:
+        "header header  header" 
+        "side   main    main"
+        "side   main    main";
+    place-content: center;
+    border: 5px solid #e1bee7;
+    background-color: #fff;
+}
+
+.item {
+    font-size: 4rem;
+}
+
+.item-1 {
+    border: 5px solid #f8bbd0;
+    background-color: #ffeeff;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    /* grid-column: 1 / 4; */
+    grid-area: header;
+}
+
+.item-2 {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    /* grid-row: 2 / 4; */
+    grid-area: side;
+}
+
+.item-3 {
+    border: 5px solid #b2ebf2;
+    background-color: #e5ffff;
+    /* grid-area: 2 / 2 / 4 / 4; */
+    grid-area: main;
+}
+
+
+
+/* Codigo del Template: Reto ---------------------------------- */
+body {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.contenedor__reto {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: 
+        "A  B   B"
+        "C  C   D"
+        "E  F   G"
+    ;
+    gap: 20px;
+}
+
+section:nth-child(1),
+section:nth-child(4),
+section:nth-child(5) {
+    background-color: #ccee3a;
+}
+
+section:nth-child(2),
+section:nth-child(6) {
+    background-color: #71bb05;
+}
+
+section:nth-child(3),
+section:nth-child(7) {
+    background-color: #268201;
+}
+
+.reto__item--1 {
+    grid-area: A;
+}
+
+.reto__item--2 {
+    grid-area: B;
+}
+
+.reto__item--3 {
+    grid-area: C;
+}
+
+.reto__item--4 {
+    grid-area: D;
+}
+
+.reto__item--5 {
+    grid-area: E;
+}
+
+.reto__item--6 {
+    grid-area: F;
+}
+
+.reto__item--7 {
+    grid-area: G;
+}
