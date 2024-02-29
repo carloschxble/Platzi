@@ -2,7 +2,6 @@
     border: 5px solid #e1bee7;
     background-color: #fff1ff;
     display: grid;
-    display: none;
     grid-template-rows: 100px 200px;
     grid-auto-columns: 100px;
     grid-auto-flow: column;
@@ -14,6 +13,9 @@
     font-size: 4rem;
 }
 
+
+
+/* Codigo del Template: Reto ---------------------------------- */
 .ejemplo {
     display: grid;
     place-content: center;
