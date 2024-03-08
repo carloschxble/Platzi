@@ -1,6 +1,11 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
@@ -9,6 +14,17 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+body video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
 }
 
 a {
@@ -27,8 +43,9 @@ header {
 header .header-icons-container {
     display: grid;
     width: 100%;
-    height: 50px;
-    background-color: #47cfac;
+    height: 52px;
+    box-shadow: 0 0 12px #222;
+    backdrop-filter: blur(12px);
 }
 
 header .header-icons-container .icons {
@@ -39,6 +56,58 @@ header .header-icons-container .icons {
     justify-self: end;
     width: 300px;
     height: auto;
-    margin-right: 50px;
+    margin-right: 48px;
 }
 
+header .header-icons-container .icons a svg {
+    font-size: 2rem;
+    color: #fff;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 88px;
+}
+
+nav .nav-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 48px;
+}
+
+nav .nav-logo-container a img {
+    width: 220px;
+}
+
+nav .profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 68px;
+}
+
+nav .profile-link a {
+    display: grid;
+    place-content: center;
+    width: auto;
+    height: 40px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 0 20px;
+    background-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: underline 2px;
+    transition: all 0.6s ease;
+}
+
+nav .profile-link a:hover {
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
