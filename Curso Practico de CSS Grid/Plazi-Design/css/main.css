@@ -18,6 +18,29 @@ body {
     right: 0;
 }
 
+.blogs-button {
+    display: grid;
+    place-content: center;
+    width: fit-content;
+    height: 40px;
+    padding: 0 20px;
+    border: 2px solid #47cfac;
+    font-weight: 600;
+    line-height: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.blogs-button:hover {
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+}
+
+.grid-container {
+    max-width: 980px;
+    margin: auto;
+}
+
 a {
     text-decoration: none;
     display: inline;
@@ -72,6 +95,7 @@ header nav .nav-logo-container {
 }
 
 header nav .nav-logo-container a {
+    width: fit-content;
     height: 44px;
 }
 
@@ -195,11 +219,27 @@ header nav .profile-link a:hover {
     text-align: center;
 }
 
+.blogs-main .blogs-posts-container .post-container {
+    display: inline-block;
+    padding-left: 12px;
+    max-width: 30%;
+    margin-bottom: 52px;
+}
+
+.blogs-main .blogs-posts-container .post-container p {
+    margin-bottom: 36px;
+}
+
+.blogs-main .blogs-posts-container .post-container img {
+    width: 100%;
+    margin-bottom: 36px;
+}
+
 footer {
     display: grid;
     place-content: center;
     height: 80px;
     border-top: 20px solid #47cfac;
-    background-color: #2c2c2c;
+    background-color: #22272d;
     color: #fff;
 }
